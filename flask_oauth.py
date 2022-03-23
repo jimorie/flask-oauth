@@ -292,8 +292,10 @@ class OAuthRemoteApp(object):
                 data, content_type = encode_request_data(data, format)
             if content_type is not None:
                 headers['Content-Type'] = content_type
+        if not data:
+            data = ""
         return OAuthResponse(*client.request(url, method=method,
-                                             body=data or '',
+                                             body=data.encode(),
                                              headers=headers))
 
     def expand_url(self, url):
