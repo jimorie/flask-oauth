@@ -134,9 +134,6 @@ class OAuthException(RuntimeError):
         self.data = data
 
     def __str__(self):
-        return self.message.encode('utf-8')
-
-    def __unicode__(self):
         return self.message
 
 
