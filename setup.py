@@ -17,7 +17,7 @@ from setuptools import setup
 setup(
     name='Flask-OAuth',
     version='0.13',
-    url='http://github.com/mitsuhiko/flask-oauth',
+    url='http://github.com/jimorie/flask-oauth',
     license='BSD',
     author='Armin Ronacher',
     author_email='armin.ronacher@active-4.com',
